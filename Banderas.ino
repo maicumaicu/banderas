@@ -210,13 +210,13 @@ void banderaGeneroFluido() {
 
 void banderaOmnisexual() {
   for (int j = 0; j < NUMPIXELS; j++) {
-    if (j < 16) {
+    if (j < 30) {
       banderas[4].pixels[j].c = colores[16];
-    } else if (j < 24) {
+    } else if (j < 60) {
       banderas[4].pixels[j].c = colores[7];
-    } else if (j < 40) {
+    } else if (j < 90) {
       banderas[4].pixels[j].c = colores[14];
-    } else if (j < 56) {
+    } else if (j < 120) {
       banderas[4].pixels[j].c = colores[17];
     } else {
       banderas[4].pixels[j].c = colores[18];
@@ -233,13 +233,13 @@ void banderaOmnisexual() {
 
 void banderaPoligenero() {
   for (int j = 0; j < NUMPIXELS; j++) {
-    if (j < 16) {
+    if (j < 30) {
       banderas[5].pixels[j].c = colores[14];
-    } else if (j < 24) {
+    } else if (j < 60) {
       banderas[5].pixels[j].c = colores[19];
-    } else if (j < 40) {
+    } else if (j < 90) {
       banderas[5].pixels[j].c = colores[20];
-    } else if (j < 56) {
+    } else if (j < 120) {
       banderas[5].pixels[j].c = colores[21];
     } else {
       banderas[5].pixels[j].c = colores[22];
@@ -256,17 +256,17 @@ void banderaPoligenero() {
 
 void banderaBigenero() {
   for (int j = 0; j < NUMPIXELS; j++) {
-    if (j < 8) {
+    if (j < 30) {
       banderas[6].pixels[j].c = colores[23];
-    } else if (j < 16) {
+    } else if (j < 45) {
       banderas[6].pixels[j].c = colores[24];
-    } else if (j < 24) {
+    } else if (j < 60) {
       banderas[6].pixels[j].c = colores[26];
-    } else if (j < 32) {
+    } else if (j < 90) {
       banderas[6].pixels[j].c = colores[25];
-    } else if (j < 40) {
+    } else if (j < 105) {
       banderas[6].pixels[j].c = colores[26];
-    } else if (j < 48) {
+    } else if (j < 120) {
       banderas[6].pixels[j].c = colores[27];
     } else {
       banderas[6].pixels[j].c = colores[28];
@@ -283,14 +283,20 @@ void banderaBigenero() {
 
 void banderaAgenero() {
   for (int j = 0; j < NUMPIXELS; j++) {
-    if (j < 16) {
+    if (j < 30) {
       banderas[7].pixels[j].c = colores[14];
-    } else if (j < 24) {
+    } else if (j < 45) {
       banderas[7].pixels[j].c = colores[19];
-    } else if (j < 40) {
+    } else if (j < 60) {
       banderas[7].pixels[j].c = colores[2];
-    } else {
+    } else if (j < 90) {
       banderas[7].pixels[j].c = colores[29];
+    } else if (j < 105) {
+      banderas[7].pixels[j].c = colores[2];
+    } else if (j < 120) {
+      banderas[7].pixels[j].c = colores[19];
+    }  else {
+      banderas[7].pixels[j].c = colores[14];
     }
     pixels.setPixelColor(j , pixels.Color(banderas[7].pixels[j].c.r, banderas[7].pixels[j].c.g, banderas[7].pixels[j].c.b));
     pixels.show();
@@ -304,9 +310,9 @@ void banderaAgenero() {
 
 void banderaBisexual() {
   for (int j = 0; j < NUMPIXELS; j++) {
-    if (j < 16) {
+    if (j < 60) {
       banderas[8].pixels[j].c = colores[30];
-    } else if (j < 24) {
+    } else if (j < 90) {
       banderas[8].pixels[j].c = colores[31];
     } else {
       banderas[8].pixels[j].c = colores[32];
@@ -323,9 +329,9 @@ void banderaBisexual() {
 
 void banderaPansexual() {
   for (int j = 0; j < NUMPIXELS; j++) {
-    if (j < 16) {
+    if (j < 45) {
       banderas[9].pixels[j].c = colores[33];
-    } else if (j < 24) {
+    } else if (j < 105) {
       banderas[9].pixels[j].c = colores[34];
     } else {
       banderas[9].pixels[j].c = colores[35];
@@ -343,11 +349,11 @@ void banderaPansexual() {
 
 void banderaAsexual() {
   for (int j = 0; j < NUMPIXELS; j++) {
-    if (j < 16) {
+    if (j < 45) {
       banderas[10].pixels[j].c = colores[14];
-    } else if (j < 24) {
+    } else if (j < 75) {
       banderas[10].pixels[j].c = colores[19];
-    } else if (j < 32) {
+    } else if (j < 105) {
       banderas[10].pixels[j].c = colores[2];
     } else {
       banderas[10].pixels[j].c = colores[31];
@@ -364,13 +370,13 @@ void banderaAsexual() {
 
 void banderaTrans() {
   for (int j = 0; j < NUMPIXELS; j++) {
-    if (j < 16) {
+    if (j < 30) {
       banderas[11].pixels[j].c = colores[35];
-    } else if (j < 24) {
+    } else if (j < 60) {
       banderas[11].pixels[j].c = colores[12];
-    } else if (j < 32) {
+    } else if (j < 90) {
       banderas[11].pixels[j].c = colores[2];
-    } else if (j < 40) {
+    } else if (j < 120) {
       banderas[11].pixels[j].c = colores[12];
     } else {
       banderas[11].pixels[j].c = colores[35];
@@ -387,11 +393,11 @@ void banderaTrans() {
 
 void banderaNobinaria() {
   for (int j = 0; j < NUMPIXELS; j++) {
-    if (j < 16) {
+    if (j < 30) {
       banderas[12].pixels[j].c = colores[34];
-    } else if (j < 24) {
+    } else if (j < 75) {
       banderas[12].pixels[j].c = colores[2];
-    } else if (j < 32) {
+    } else if (j < 120) {
       banderas[12].pixels[j].c = colores[31];
     } else {
       banderas[12].pixels[j].c = colores[14];
@@ -408,13 +414,13 @@ void banderaNobinaria() {
 
 void banderaLGBT() {
   for (int j = 0; j < NUMPIXELS; j++) {
-    if (j < 16) {
+    if (j < 30) {
       banderas[13].pixels[j].c = colores[36];
-    } else if (j < 24) {
+    } else if (j < 60) {
       banderas[13].pixels[j].c = colores[6];
-    } else if (j < 32) {
+    } else if (j < 90) {
       banderas[13].pixels[j].c = colores[37];
-    } else if (j < 40) {
+    } else if (j < 120) {
       banderas[13].pixels[j].c = colores[38];
     } else {
       banderas[13].pixels[j].c = colores[31];
